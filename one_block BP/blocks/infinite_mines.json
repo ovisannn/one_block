@@ -4,6 +4,8 @@
         "description": {
             "identifier": "oneblock:infinite_mines"
         },
-        "components": {}
+        "components": {
+            "minecraft:loot": "loot_tables/mines/mines_drop.json"
+        }
     }
 }

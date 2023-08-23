@@ -8,6 +8,11 @@
         "spawn_horse_drop",
         "spawn_pig_drop",
         "spawn_sheep_drop",
-        "spawn_villager_drop"
+        "spawn_villager_drop",
+        "spawn_cavespider_drop",
+        "spawn_creeper_drop",
+        "spawn_skeleton_drop",
+        "spawn_spider_drop",
+        "spawn_zombie_drop"
     ]
 }
