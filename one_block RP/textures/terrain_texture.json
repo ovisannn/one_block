@@ -1,0 +1,170 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "badland_back": {
+      "textures": "textures/blocks/badland/back"
+    },
+    "badland_down": {
+      "textures": "textures/blocks/badland/down"
+    },
+    "badland_front": {
+      "textures": "textures/blocks/badland/front"
+    },
+    "badland_left": {
+      "textures": "textures/blocks/badland/left"
+    },
+    "badland_right": {
+      "textures": "textures/blocks/badland/right"
+    },
+    "badland_top": {
+      "textures": "textures/blocks/badland/top"
+    },
+    "caves_back": {
+      "textures": "textures/blocks/caves/back"
+    },
+    "caves_down": {
+      "textures": "textures/blocks/caves/down"
+    },
+    "caves_front": {
+      "textures": "textures/blocks/caves/front"
+    },
+    "caves_left": {
+      "textures": "textures/blocks/caves/left"
+    },
+    "caves_right": {
+      "textures": "textures/blocks/caves/right"
+    },
+    "caves_top": {
+      "textures": "textures/blocks/caves/top"
+    },
+    "dungeon_back": {
+      "textures": "textures/blocks/dungeon/back"
+    },
+    "dungeon_down": {
+      "textures": "textures/blocks/dungeon/down"
+    },
+    "dungeon_front": {
+      "textures": "textures/blocks/dungeon/front"
+    },
+    "dungeon_left": {
+      "textures": "textures/blocks/dungeon/left"
+    },
+    "dungeon_right": {
+      "textures": "textures/blocks/dungeon/right"
+    },
+    "dungeon_top": {
+      "textures": "textures/blocks/dungeon/top"
+    },
+    "end_back": {
+      "textures": "textures/blocks/end/back"
+    },
+    "end_down": {
+      "textures": "textures/blocks/end/down"
+    },
+    "end_front": {
+      "textures": "textures/blocks/end/front"
+    },
+    "end_left": {
+      "textures": "textures/blocks/end/left"
+    },
+    "end_right": {
+      "textures": "textures/blocks/end/right"
+    },
+    "end_top": {
+      "textures": "textures/blocks/end/top"
+    },
+    "mines_back": {
+      "textures": "textures/blocks/mines/back"
+    },
+    "mines_down": {
+      "textures": "textures/blocks/mines/down"
+    },
+    "mines_front": {
+      "textures": "textures/blocks/mines/front"
+    },
+    "mines_left": {
+      "textures": "textures/blocks/mines/left"
+    },
+    "mines_right": {
+      "textures": "textures/blocks/mines/right"
+    },
+    "mines_top": {
+      "textures": "textures/blocks/mines/top"
+    },
+    "nether_back": {
+      "textures": "textures/blocks/nether/back"
+    },
+    "nether_down": {
+      "textures": "textures/blocks/nether/down"
+    },
+    "nether_front": {
+      "textures": "textures/blocks/nether/front"
+    },
+    "nether_left": {
+      "textures": "textures/blocks/nether/left"
+    },
+    "nether_right": {
+      "textures": "textures/blocks/nether/right"
+    },
+    "nether_top": {
+      "textures": "textures/blocks/nether/top"
+    },
+    "ocean_back": {
+      "textures": "textures/blocks/ocean/back"
+    },
+    "ocean_down": {
+      "textures": "textures/blocks/ocean/down"
+    },
+    "ocean_front": {
+      "textures": "textures/blocks/ocean/front"
+    },
+    "ocean_left": {
+      "textures": "textures/blocks/ocean/left"
+    },
+    "ocean_right": {
+      "textures": "textures/blocks/ocean/right"
+    },
+    "ocean_top": {
+      "textures": "textures/blocks/ocean/top"
+    },
+    "plain_back": {
+      "textures": "textures/blocks/plain/back"
+    },
+    "plain_down": {
+      "textures": "textures/blocks/plain/down"
+    },
+    "plain_front": {
+      "textures": "textures/blocks/plain/front"
+    },
+    "plain_left": {
+      "textures": "textures/blocks/plain/left"
+    },
+    "plain_right": {
+      "textures": "textures/blocks/plain/right"
+    },
+    "plain_top": {
+      "textures": "textures/blocks/plain/top"
+    },
+    "tundra_back": {
+      "textures": "textures/blocks/tundra/back"
+    },
+    "tundra_down": {
+      "textures": "textures/blocks/tundra/down"
+    },
+    "tundra_front": {
+      "textures": "textures/blocks/tundra/front"
+    },
+    "tundra_left": {
+      "textures": "textures/blocks/tundra/left"
+    },
+    "tundra_right": {
+      "textures": "textures/blocks/tundra/right"
+    },
+    "tundra_top": {
+      "textures": "textures/blocks/tundra/top"
+    }
+  },
+  "texture_name": "atlas.terrain"
+}

@@ -1,0 +1,36 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "empty": {
+      "textures": "textures/items/empty"
+    },
+    "inferno_canon": {
+      "textures": "textures/items/inferno_canon"
+    },
+    "baby_dragon_egg": {
+      "textures": "textures/items/baby_dragon_egg"
+    },
+    "inferno_totem": {
+      "textures": "textures/items/inferno_totem"
+    },
+    "skyleton_head": {
+      "textures": "textures/items/skyleton_helmet"
+    },
+    "skyleton_totem": {
+      "textures": "textures/items/skyleton_totem"
+    },
+    "thunderterror_egg": {
+      "textures": "textures/items/thunderterror_egg"
+    },
+    "thunderterror_totem": {
+      "textures": "textures/items/thunderterror_totem"
+    },
+    "wither_devil_totem": {
+      "textures": "textures/items/wither_devil_totem"
+    },
+    "wither_devil_wing": {
+      "textures": "textures/items/wither_devil_wing"
+    }
+  },
+  "texture_name": "atlas.items"
+}

@@ -1,0 +1,9 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "oneblock:invis_spawn_villager"
+        },
+        "components": {}
+    }
+}

@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.inferno_canon.tpp_hold": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-87.5, 45, 0]
+				},
+				"rightArm": {
+					"rotation": [-85, -12.5, 0]
+				},
+				"InferoCannon": {
+					"position": [0, 0, 0.4]
+				}
+			}
+		},
+		"animation.inferno_canon.tpp_shoot": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"leftArm": {
+					"rotation": [-87.5, 45, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 1],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": [-85, -12.5, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 1],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"InferoCannon": {
+					"position": [0, 0, 0.4]
+				}
+			}
+		},
+		"animation.inferno_canon.fpp_hold": {
+			"loop": true,
+			"animation_length": 0.117,
+			"bones": {
+				"InferoCannon": {
+					"rotation": [-27.5, 61, -70.5],
+					"position": [-10, 8.4, -8.7]
+				}
+			}
+		},
+		"animation.inferno_canon.fpp_shoot": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"InferoCannon": {
+					"rotation": [-27.5, 61, -70.5],
+					"position": {
+						"0.0": [-10, 8.4, -8.7],
+						"0.0833": [-13, 11.4, -8.7],
+						"0.25": [-10, 8.4, -8.7]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "values": [
+        "infinite_blocks",
+        "spawn_bee_drop",
+        "spawn_chicken_drop",
+        "spawn_cow_drop",
+        "spawn_donkey_drop",
+        "spawn_horse_drop",
+        "spawn_pig_drop",
+        "spawn_sheep_drop",
+        "spawn_villager_drop"
+    ]
+}

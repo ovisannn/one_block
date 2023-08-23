@@ -1,0 +1,9 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "oneblock:infinite_nether"
+        },
+        "components": {}
+    }
+}

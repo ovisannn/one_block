@@ -1,0 +1,10 @@
+pack.name=one_block RP
+pack.description=Resource Pack for one_block
+item.oneblock:invis_spawn_chicken.name=invisspawnchick
+item.oneblock:invis_spawn_bee.name=invisspawnbee
+item.oneblock:invis_spawn_cow.name=invisspawncow
+item.oneblock:invis_spawn_donkey.name=invisspawndonkey
+item.oneblock:invis_spawn_horse.name=invisspawnhorse
+item.oneblock:invis_spawn_pig.name=invisspawnpig
+item.oneblock:invis_spawn_villager.name=invisspawnvillager
+item.oneblock:invis_spawn_sheep.name=invisspawnsheep

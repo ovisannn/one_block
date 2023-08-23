@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item.float": {
+			"loop": true,
+			"animation_length": 2.1,
+			"bones": {
+				"rootbone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.08": [0, 360, 0]
+					},
+					"position": [0, "1+math.cos(query.anim_time * 200)", 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+one_block BP/bridge/*
+!one_block BP/bridge/config.json
+!one_block BP/bridge/uninstalled_plugins.json
+*.py
+*.bat

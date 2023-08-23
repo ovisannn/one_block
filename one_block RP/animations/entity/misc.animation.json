@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.projectile.direction": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            "variable.direction",
+            0
+          ]
+        }
+      }
+    },
+    "animation.projectile.trail": {
+      "loop": true,
+      "animation_length": 0.15,
+      "particle_effects": {
+        "0.0": {
+          "effect": "trail",
+          "locator": "trail"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+    "format_version": "1.20.10",
+    "oneblock:infinite_plains":{
+        "sound": "stone",
+        "textures":{
+            "up": "plain_top",
+			"down": "plain_down",
+			"east": "plain_left",
+			"west": "plain_right",
+			"north": "plain_front",
+			"south": "plain_back"
+        }
+    },
+    "oneblock:infinite_mines":{
+        "sound": "stone",
+        "textures":{
+            "up": "mines_top",
+            "down": "mines_down",
+            "east": "mines_right",
+            "north": "mines_front",
+            "south": "mines_back",
+            "west": "mines_left"
+        }
+    },
+    "oneblock:infinite_badland":{
+        "sound": "stone",
+        "textures":{
+            "up": "badland_top",
+            "down": "badland_down",
+            "east": "badland_right",
+            "north": "badland_front",
+            "south": "badland_back",
+            "west": "badland_left"
+        }
+    },
+    "oneblock:infinite_cave":{
+        "sound": "stone",
+        "textures":{
+            "up": "caves_top",
+            "down": "caves_down",
+            "east": "caves_right",
+            "north": "caves_front",
+            "south": "caves_back",
+            "west": "caves_left"
+        }
+    },
+    "oneblock:infinite_jungle":{
+        "sound": "stone",
+        "textures":{
+            "up": "dungeon_top",
+            "down": "dungeon_down",
+            "east": "dungeon_right",
+            "north": "dungeon_front",
+            "south": "dungeon_back",
+            "west": "dungeon_left"
+        }
+    },
+    "oneblock:infinite_end":{
+        "sound": "stone",
+        "textures":{
+            "up": "end_top",
+            "down": "end_down",
+            "east": "end_right",
+            "north": "end_front",
+            "south": "end_back",
+            "west": "end_left"
+        }
+    },
+    "oneblock:infinite_nether":{
+        "sound": "stone",
+        "textures":{
+            "up": "nether_top",
+            "down": "nether_down",
+            "east": "nether_right",
+            "north": "nether_front",
+            "south": "nether_back",
+            "west": "nether_left"
+        }
+    },
+    "oneblock:infinite_ocean":{
+        "sound": "stone",
+        "textures":{
+            "up": "ocean_top",
+            "down": "ocean_down",
+            "east": "ocean_right",
+            "north": "ocean_front",
+            "south": "ocean_back",
+            "west": "ocean_left"
+        }
+    },
+    "oneblock:infinite_tundra":{
+        "sound": "stone",
+        "textures":{
+            "up": "tundra_top",
+            "down": "tundra_down",
+            "east": "tundra_right",
+            "north": "tundra_front",
+            "south": "tundra_back",
+            "west": "tundra_left"
+        }
+    } 
+}

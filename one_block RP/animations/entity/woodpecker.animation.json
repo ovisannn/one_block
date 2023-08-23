@@ -1,0 +1,101 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.woodpecker.idle": {
+			"loop": true,
+			"animation_length": 7.2,
+			"bones": {
+				"Woodpecker": {
+					"position": [0, 0, "-0.1+math.cos(query.anim_time * 200)*0.1"]
+				},
+				"Neck": {
+					"rotation": {
+						"0.0": ["-12.5+math.cos(query.anim_time * 200)*1 ", 0, 0],
+						"0.5417": [-12.5, 0, 0],
+						"0.7917": [-25, 0, 0],
+						"1.6667": [-25, 0, 0],
+						"1.875": [-2.5, 0, 0],
+						"2.75": [-2.5, 27.5, 0],
+						"4.7083": [-2.5, 27.5, 0],
+						"4.9167": [-2.5, -27.5, 0],
+						"5.5417": [-15, -27.5, 0],
+						"5.75": [-15, -27.5, 0],
+						"5.9583": [0, -27.5, 0],
+						"7.1667": ["-12.5+math.cos(query.anim_time * 200)*1 ", 0, 0]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5417": [0, 0, 0],
+						"0.7917": [0, -12.5, 0],
+						"1.6667": [0, -12.5, 0],
+						"1.875": [-22.5, -12.5, 0],
+						"2.75": [-22.5, 5, 0],
+						"4.7083": [-22.5, 5, 0],
+						"4.9167": [0, 5, 0],
+						"5.5417": [-15, 5, 0],
+						"5.75": [-15, 5, 0],
+						"5.9583": [-10, 0, 0],
+						"7.1667": [0, 0, 0]
+					}
+				},
+				"LWing": {
+					"rotation": ["math.cos(query.anim_time * 200)*-3", 0, 0]
+				},
+				"RWing": {
+					"rotation": ["math.cos(query.anim_time * 200)*-3", 0, 0]
+				},
+				"LLeg": {
+					"position": [0, 0, "0.1+math.cos(query.anim_time * 200)*-0.1"]
+				},
+				"RLeg": {
+					"position": [0, 0, "0.1+math.cos(query.anim_time * 200)*-0.1"]
+				}
+			}
+		},
+		"animation.woodpecker.destroying": {
+			"loop": true,
+			"animation_length": 3.6,
+			"bones": {
+				"Neck": {
+					"rotation": ["-math.abs(math.sin(query.anim_time * 1000)*20)", 0, 0]
+				},
+				"LWing": {
+					"rotation": [0, 0, "-50-math.abs(math.sin(query.anim_time * 1000)*-10)"]
+				},
+				"RWing": {
+					"rotation": [0, 0, "50+math.abs(math.sin(query.anim_time * 1000)*10)"]
+				}
+			}
+		},
+		"animation.woodpecker.fly": {
+			"loop": true,
+			"animation_length": 3.6,
+			"bones": {
+				"Woodpecker": {
+					"rotation": [42.5, 0, 0],
+					"position": [0, "math.cos(query.anim_time * 400)*1", 2]
+				},
+				"Neck": {
+					"rotation": ["-32.5+math.sin(query.anim_time * 400)*5", 0, 0]
+				},
+				"LWing": {
+					"rotation": [0, 0, "-62.5+math.cos(query.anim_time * 800)*30"]
+				},
+				"RWing": {
+					"rotation": [0, 0, "62.5+math.cos(query.anim_time * 800)*-30"]
+				},
+				"LLeg": {
+					"rotation": ["45+math.sin(query.anim_time * 400)*-5", 0, 0]
+				},
+				"RLeg": {
+					"rotation": ["47.5+math.sin(query.anim_time * 400)*-5", 0, 0]
+				},
+				"Tail": {
+					"rotation": ["-47.5+math.sin(query.anim_time * 400)*5", 0, 0]
+				}
+			}
+		}
+	}
+}

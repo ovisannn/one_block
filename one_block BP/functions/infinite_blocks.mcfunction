@@ -1,0 +1,11 @@
+setblock 88 21 394 minecraft:barrier
+setblock 88 21 394 oneblock:infinite_plains
+setblock 88 21 439 oneblock:infinite_plains
+setblock 152 21 439 oneblock:infinite_mines
+setblock 154 17 502 oneblock:infinite_tundra
+setblock 213 15 503 oneblock:infinite_ocean
+setblock 215 16 567 oneblock:infinite_jungle
+setblock 155 17 561 oneblock:infinite_cave
+setblock 151 16 632 oneblock:infinite_badland
+setblock 156 16 697 oneblock:infinite_nether
+setblock 86 24 698 oneblock:infinite_end
