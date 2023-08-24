@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.10",
+    "animation_controllers": {
+        "controller.animation.penguin.move":{
+            "initial_state": "idle",
+            "states": {
+                "walk" :{
+                    "animations": [
+                        "look_at_target",
+                        {
+                            "walk" : "query.modified_move_speed"
+                        }
+                    ]
+                },
+                "idle": {
+                    "animations": [
+                        "look_at_target",
+                        {
+                            "idle" : "query.is_standing"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

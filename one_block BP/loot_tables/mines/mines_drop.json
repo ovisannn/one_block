@@ -124,32 +124,34 @@
                         }
                     ]
                 },
-				{
-					"type": "item",
-					"name": "oneblock:invis_spawn_zombie",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "oneblock:invis_spawn_skeleton",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "oneblock:invis_spawn_creeper",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "oneblock:invis_spawn_spider",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "oneblock:invis_spawn_cavespider",
-					"weight": 4
-				}
+                {
+                    "type": "item",
+                    "name": "oneblock:invis_spawn_zombie",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "oneblock:invis_spawn_skeleton",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "oneblock:invis_spawn_creeper",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "oneblock:invis_spawn_spider",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "oneblock:invis_spawn_cavespider",
+                    "weight": 4
+                }
             ]
         }
     ]
 }
+
+

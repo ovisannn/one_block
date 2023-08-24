@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "oneblock:penguin",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/penguin"
+            },
+            "geometry": {
+                "default": "geometry.penguin"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color": "#505152",
+                "overlay_color": "#3b9dff"
+            },
+            "animations": {
+                "walking": "animation.penguin.walk",
+                "idle": "animation.penguin.idle"
+            }
+        }
+    }
+}

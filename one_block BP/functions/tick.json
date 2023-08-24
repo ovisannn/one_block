@@ -13,6 +13,13 @@
         "spawn_creeper_drop",
         "spawn_skeleton_drop",
         "spawn_spider_drop",
-        "spawn_zombie_drop"
+        "spawn_zombie_drop",
+        "spawn_fox_drop",
+        "spawn_polarbear_drop",
+        "spawn_rabbit_drop",
+        "spawn_snowgolem_drop",
+        "spawn_stray_drop",
+        "spawn_wolf_drop",
+        "spawn_penguin_drop"
     ]
 }

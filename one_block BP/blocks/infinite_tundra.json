@@ -4,6 +4,8 @@
         "description": {
             "identifier": "oneblock:infinite_tundra"
         },
-        "components": {}
+        "components": {
+            "minecraft:loot": "loot_tables/tundra/tundra_drop.json"
+        }
     }
 }
