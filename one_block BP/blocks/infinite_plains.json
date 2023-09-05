@@ -2,10 +2,27 @@
     "format_version": "1.20.10",
     "minecraft:block": {
         "description": {
-            "identifier": "oneblock:infinite_plains"
+            "identifier": "oneblock:infinite_plains",
+            "is_experimental": true
+
         },
         "components": {
-            "minecraft:loot": "loot_tables/plains/plains_drop.json"
+            "minecraft:loot": "loot_tables/plains/plains_drop.json",
+            "minecraft:on_player_destroyed": {
+                "event": "post_destroyed"
+            }
+        },
+        "events": {
+            "post_destroyed": {
+                "run_command":{
+                    "command": "tp @e[type=player] ^ ^1 ^"
+                }
+            },
+            "detect_if_stepped":{
+                "run_command":{
+                    "command": "execute if block ^ ^-1 oneblock:infinite_plains"
+                }
+            }
         }
     }
 }

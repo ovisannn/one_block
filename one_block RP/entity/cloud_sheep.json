@@ -2,27 +2,27 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "oneblock:penguin",
+            "identifier": "oneblock:cloud_sheep",
             "materials": {
                 "default": "entity"
             },
             "textures": {
-                "default": "textures/entity/penguin"
+                "default": "textures/entity/cloud_sheep"
             },
             "geometry": {
-                "default": "geometry.penguin"
+                "default": "geometry.cloud_sheep"
             },
             "render_controllers": [
                 "controller.render.default"
             ],
             "spawn_egg": {
                 "base_color": "#505152",
-                "overlay_color": "#3b9dff"
+                "overlay_color": "#cccccc"
             },
             "animations": {
-                "root": "controller.animation.penguin",
-                "walk": "animation.penguin.walk",
-                "idle": "animation.penguin.idle"
+                "root": "controller.animation.cloud_sheep",
+                "fly": "animation.cloud_sheep.fly",
+                "walk": "animation.cloud_sheep.fly"
             },
             "scripts": {
                 "animate": [

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.10",
+    "render_controllers": {
+      "controller.render.cloud_sheep": {
+        "geometry": "Geometry.default",
+        "materials": [
+          {
+            "*": "Material.default"
+          }
+        ],
+        "textures": [
+          "Texture.default"
+        ]
+      }
+    }
+  }

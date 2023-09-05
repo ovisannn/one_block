@@ -1,11 +1,24 @@
 {
     "format_version": "1.20.10",
     "animation_controllers": {
-        "controller.animation.penguin":{
+        "controller.animation.cloud_sheep":{
             "states": {
-                "idle" :{
+                "default":{
                     "animations": [
-                        "idle"
+                        "fly"
+                    ],
+                    "transitions": [
+                        {
+                            "walk": "query.modified_move_speed > 0.02"
+                        },
+                        {
+                            "fly": "!query.modified_move_speed > 0.02"
+                        }
+                    ]
+                },
+                "fly" :{
+                    "animations": [
+                        "fly"
                     ],
                     "transitions": [
                         {
@@ -19,7 +32,7 @@
                     ],
                     "transitions": [
                         {
-                            "idle": "!query.modified_move_speed < 0.02"
+                            "fly": "!query.modified_move_speed > 0.02"
                         }
                     ]
                 }

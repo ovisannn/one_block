@@ -1,1 +1,2 @@
 diagnostic.disable.=true
+diagnostic.disable.behaviorpack.entity.component.missing=true

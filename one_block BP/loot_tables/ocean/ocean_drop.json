@@ -1,0 +1,139 @@
+{
+    "pools": [
+        {
+            "rolls" : 1,
+            "entries": [
+                {
+					"type": "item",
+					"name": "minecraft:prismarine",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "set_data",
+							"data": 2
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:prismarine",
+					"weight": 8,
+					"functions": [
+						{
+							"function": "set_data",
+							"data": 1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:prismarine",
+					"weight": 9
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sponge",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "minecraft:coral",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "random_block_state"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gravel",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:dirt",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sea_lantern",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "minecraft:chest",
+					"weight": 5,
+					"functions": [
+						{
+							"function":"fill_container",
+							"loot_table": "loot_tables/ocean/chest_a.json"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:chest",
+					"weight": 5,
+					"functions": [
+						{
+							"function":"fill_container",
+							"loot_table": "loot_tables/ocean/chest_b.json"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:chest",
+					"weight": 5,
+					"functions": [
+						{
+							"function":"fill_container",
+							"loot_table": "loot_tables/ocean/chest_c.json"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_chicken",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_pig",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_cow",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_sheep",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_bee",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_villager",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_horse",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "oneblock:invis_spawn_donkey",
+					"weight": 1
+				}	
+            ]
+        }
+    ]
+}

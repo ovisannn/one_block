@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls" : 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:sponge"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:tropical_fish_bucket"
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:turtle_egg",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

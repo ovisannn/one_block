@@ -5,7 +5,17 @@
             "identifier": "oneblock:infinite_tundra"
         },
         "components": {
-            "minecraft:loot": "loot_tables/tundra/tundra_drop.json"
+            "minecraft:loot": "loot_tables/tundra/tundra_drop.json",
+            "minecraft:on_player_destroyed": {
+                "event": "post_destroyed"
+            }
+        },
+        "events": {
+            "post_destroyed": {
+                "run_command":{
+                    "command": "tp @e[type=player] ^ ^1 ^"
+                }
+            }
         }
     }
 }

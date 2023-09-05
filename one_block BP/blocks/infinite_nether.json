@@ -4,6 +4,17 @@
         "description": {
             "identifier": "oneblock:infinite_nether"
         },
-        "components": {}
+        "components": {
+            "minecraft:on_player_destroyed": {
+                "event": "post_destroyed"
+            }
+        },
+        "events": {
+            "post_destroyed": {
+                "run_command":{
+                    "command": "tp @e[type=player] ^ ^1 ^"
+                }
+            }
+        }
     }
 }
