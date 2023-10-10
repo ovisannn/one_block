@@ -3,27 +3,27 @@
     "animation_controllers": {
         "controller.animation.harpy":{
             "states": {
-                "idle" :{
-                    "animations": [
-                        "idle"
-                    ],
-                    "transitions": [
-                        {
-                            "walk": "query.modified_move_speed > 0.02 && !query.is_delayed_attacking"
-                        },
-                        {
-                            "attack": "query.is_delayed_attacking"
-                        }
-                    ]
-                },
+                // "idle" :{
+                //     "animations": [
+                //         "idle"
+                //     ],
+                //     "transitions": [
+                //         {
+                //             "walk": "query.modified_move_speed > 0.02 && !query.is_delayed_attacking"
+                //         },
+                //         {
+                //             "attack": "query.is_delayed_attacking"
+                //         }
+                //     ]
+                // },
                 "walk": {
                     "animations": [
                         "fly"
                     ],
                     "transitions": [
-                        {
-                            "idle": "!query.modified_move_speed < 0.02 && !query.is_delayed_attacking"
-                        },
+                        // {
+                        //     "idle": "!query.modified_move_speed < 0.02 && !query.is_delayed_attacking"
+                        // },
                         {
                             "attack": "query.is_delayed_attacking"
                         }
@@ -34,9 +34,9 @@
                         "attack"
                     ],
                     "transitions": [
-                        {
-                            "idle": "!query.modified_move_speed < 0.02 && !query.is_delayed_attacking"
-                        },
+                        // {
+                        //     "idle": "!query.modified_move_speed < 0.02 && !query.is_delayed_attacking"
+                        // },
                         {
                             "walk": "query.modified_move_speed > 0.02 && !query.is_delayed_attacking"
                         }
