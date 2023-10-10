@@ -2,15 +2,15 @@
     "format_version": "1.20.10",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "oneblock:penguin",
+            "identifier": "oneblock:baby_thunder_terror",
             "materials": {
-                "default": "entity"
+                "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/penguin"
+                "default": "textures/entity/baby_thunder_terror"
             },
             "geometry": {
-                "default": "geometry.penguin"
+                "default": "geometry.baby_thunder_terror"
             },
             "render_controllers": [
                 "controller.render.default"
@@ -20,9 +20,12 @@
                 "overlay_color": "#3b9dff"
             },
             "animations": {
-                "root": "controller.animation.penguin",
-                "walk": "animation.penguin.walk",
-                "idle": "animation.penguin.idle"
+                "root": "controller.animation.baby_thunder_terror",
+                "fly": "animation.baby_thunder_terror.fly",
+                "idle": "animation.baby_thunder_terror.idle",
+                "walk": "animation.baby_thunder_terror.walk",
+                "wake": "animation.baby_thunder_terror.wake",
+                "sit": "animation.baby_thunder_terror.sit"
             },
             "scripts": {
                 "animate": [

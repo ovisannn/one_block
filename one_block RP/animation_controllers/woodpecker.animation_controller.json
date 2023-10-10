@@ -1,0 +1,48 @@
+{
+    "format_version": "1.20.10",
+    "animation_controllers": {
+        "controller.animation.woodpecker":{
+            "states": {
+                "idle" :{
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "walk": "query.modified_move_speed > 0.02"
+                        },
+                        {
+                            "destroying": "query.is_ram_attacking"
+                        }
+                    ]
+                },
+                "walk": {
+                    "animations": [
+                        "fly"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.modified_move_speed > 0.02"
+                        },
+                        {
+                            "destroying": "query.is_ram_attacking"
+                        }
+                    ]
+                },
+                "destroying":{
+                    "animations": [
+                        "destroying"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.modified_move_speed > 0.02"
+                        },
+                        {
+                            "walk": "query.modified_move_speed > 0.02"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

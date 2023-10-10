@@ -1,0 +1,48 @@
+{
+    "format_version": "1.20.10",
+    "animation_controllers": {
+        "controller.animation.baby_ender_dragon":{
+            "states": {
+                "default":{
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.02 && q.is_on_ground"
+                        },
+                        {
+                            "fly": "!q.is_on_ground || (!q.is_on_ground && q.modified_move_speed > 0.02)"
+                        }
+                    ]
+                },
+                "fly" :{
+                    "animations": [
+                        "fly"
+                    ],
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.02 && q.is_on_ground"
+                        },
+                        {
+                            "default": "q.modified_move_speed < 0.02 && q.is_on_ground"
+                        }
+                    ]
+                },
+                "walk": {
+                    "animations": [
+                        "walk"
+                    ],
+                    "transitions": [
+                        {
+                            "fly": "!q.is_on_ground || (!q.is_on_ground && q.modified_move_speed > 0.02)"
+                        },
+                        {
+                            "default": "q.modified_move_speed < 0.02 && q.is_on_ground"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

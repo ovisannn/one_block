@@ -13,7 +13,7 @@
             "minecraft:is_hidden_when_invisible": {
             },
             "minecraft:type_family": {
-              "family": [ "animal", "mob" ]
+              "family": [ "animal", "mob", "penguin" ]
             },
             "minecraft:breathable": {
               "total_supply": 15,

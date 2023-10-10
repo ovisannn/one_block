@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.10",
+    "animation_controllers": {
+        "controller.animation.harpy":{
+           "initial_state": "default",
+           "states": {
+            "default":{
+                "on_entry": [
+                    
+                ],
+                "on_exit": [
+                   
+                ],
+                "transitions": [
+                   {
+                    "attack" : "q.is_delayed_attacking"
+                    }
+                ]
+            },
+            "attack":{
+                "on_entry": [
+                ],
+                "on_exit": [
+                    "/summon oneblock:knockback_entity ^^^"
+                ],
+                "transitions": [
+                    {
+                        "default": "!q.is_delayed_attacking"
+                    }
+                ]
+            }
+           }
+        }
+        
+    }
+}

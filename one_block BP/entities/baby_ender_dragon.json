@@ -1,0 +1,163 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "oneblock:baby_ender_dragon",
+            "is_summonable": true,
+            "is_spawnable": true
+        },
+        "component_groups": {
+            "walking_phase":{
+                "minecraft:navigation.walk": {
+                    "avoid_damage_blocks": false,
+                    "avoid_portals": false,
+                    "avoid_sun": false,
+                    "avoid_water": false,
+                    "blocks_to_avoid": [],
+                    "can_breach": false,
+                    "can_break_doors": false,
+                    "can_jump": true,
+                    "can_open_doors": false,
+                    "can_open_iron_doors": false,
+                    "can_pass_doors": true,
+                    "can_path_from_air": false,
+                    "can_path_over_lava": false,
+                    "can_path_over_water": false,
+                    "can_sink": true,
+                    "can_swim": false,
+                    "can_walk": true,
+                    "can_walk_in_lava": false,
+                    "is_amphibious": false
+                },
+                "minecraft:movement.basic": {
+                    "max_turn": 30
+                },
+                "minecraft:angry": {
+                    "duration": 25,
+                    "duration_delta": 0
+                }
+            },
+            "flying_phase":{
+                "minecraft:movement.fly": {
+                    "max_turn": 30
+                },
+                "minecraft:navigation.fly": {
+                    "can_path_over_water": true,
+                    "avoid_water": true,
+                    "avoid_damage_blocks": true
+                }
+            },
+            "dragon_tamed":{
+                "minecraft:is_tamed": {},
+                "minecraft:rideable": {
+                    "seat_count": 1,
+                    "family_types": ["player"],
+                    "interact_text": "action.interact.ride.horse",
+                    "seats":{
+                        "position": [0.0, 0.8, -0.2]
+                    }
+                },
+                "minecraft:input_ground_controlled": {},
+                "minecraft:behavior.player_ride_tamed": {},
+                "minecraft:can_power_jump": {},
+                "minecraft:horse.jump_strength": {
+                    "value": 0
+                }
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:health": {
+                "value": 15,
+                "max": 15
+            },
+            "minecraft:type_family": {
+                "family": [ "mob" ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                {
+                    "filters": {
+                    "test": "in_lava",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": true
+                    },
+                    "cause": "lava",
+                    "damage_per_tick": 4
+                }
+                ]
+            },
+            "minecraft:movement": {
+                "value": {
+                "range_min": 0.1125,
+                "range_max": 0.3375
+                }
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 0.7
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 7,
+                "look_distance": 6.0,
+                "probability": 0.02
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 8
+            },
+            "minecraft:physics": {
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:leashable": {
+                "can_be_stolen": false,
+                "hard_distance": 6,
+                "max_distance": 10,
+                "soft_distance": 4
+            },
+            "minecraft:horse.jump_strength": {
+                "value": 7
+            },
+
+            "minecraft:conditional_bandwidth_optimization": {
+            }
+        },
+
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "walking_phase",
+                        "dragon_tamed"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "fly_phase"
+                    ]
+                }
+            },
+            "minecraft:on_tame":{
+                "add": {
+                    "component_groups": [
+                        "dragon_tamed",
+                        "fly_phase"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "walking_phase"
+                    ]
+                }
+            }}
+
+            
+        }
+}

@@ -1,25 +1,22 @@
 {
     "format_version": "1.20.10",
     "animation_controllers": {
-        "controller.animation.penguin":{
+        "controller.animation.mummy": {
             "states": {
-                "idle" :{
-                    "animations": [
-                        "idle"
-                    ],
+                "default": {
                     "transitions": [
                         {
-                            "walk": "query.modified_move_speed > 0.02"
+                            "state_1": "query.is_baby"
                         }
                     ]
                 },
-                "walk": {
+                "state_1": {
                     "animations": [
-                        "walk"
+                        "state_1"
                     ],
                     "transitions": [
                         {
-                            "idle": "!query.modified_move_speed > 0.02"
+                            "default": "query.all_animations_finished"
                         }
                     ]
                 }

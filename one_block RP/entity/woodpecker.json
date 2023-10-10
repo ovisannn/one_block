@@ -2,15 +2,15 @@
     "format_version": "1.20.10",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "oneblock:penguin",
+            "identifier": "oneblock:woodpecker",
             "materials": {
-                "default": "entity"
+                "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/penguin"
+                "default": "textures/entity/woodpecker"
             },
             "geometry": {
-                "default": "geometry.penguin"
+                "default": "geometry.woodpecker"
             },
             "render_controllers": [
                 "controller.render.default"
@@ -20,9 +20,10 @@
                 "overlay_color": "#3b9dff"
             },
             "animations": {
-                "root": "controller.animation.penguin",
-                "walk": "animation.penguin.walk",
-                "idle": "animation.penguin.idle"
+                "root": "controller.animation.woodpecker",
+                "fly": "animation.woodpecker.fly",
+                "idle": "animation.woodpecker.idle",
+                "destroying": "animation.woodpecker.destroying"
             },
             "scripts": {
                 "animate": [

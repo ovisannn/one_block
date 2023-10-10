@@ -1,0 +1,116 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "oneblock:harpy",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "animations": {
+                "harpy_animations" : "controller.animation.harpy"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "harpy_animations" : "q.is_alive"
+                    }
+                ]
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:movement": {
+                "max": 3
+            },
+            "minecraft:physics": {
+                "has_collision": true
+            },
+            "minecraft:collision_box": {
+                "height": 2,
+                "width": 1
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "must_see_forget_duration": 17.0,
+                "entity_types": [
+                  {
+                    "filters": {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "player" }
+                      ]
+                    },
+                    "max_dist": 35
+                  }
+                ]
+            },
+            "minecraft:attack": {
+                "damage": 0
+            }
+        },
+        "component_groups": {
+            "harpy_attack":{
+                "minecraft:behavior.delayed_attack": {
+                    "priority": 1,
+                    "attack_duration": 0.5,
+                    "attack_once": false,
+                    "attack_types": "",
+                    "hit_delay_pct": 1,
+                    "random_stop_interval": 0,
+                    "reach_multiplier": 2,
+                    "require_complete_path": true,
+                    "track_target": true
+                }
+            },
+            "move":{        
+                "minecraft:can_fly": {},
+                "minecraft:movement.fly": {
+                    "max_turn": 30
+                },
+                "minecraft:navigation.fly": {
+                    "avoid_damage_blocks": false,
+                    "avoid_portals": false,
+                    "avoid_sun": false,
+                    "avoid_water": false,
+                    "blocks_to_avoid": [],
+                    "can_breach": false,
+                    "can_break_doors": false,
+                    "can_jump": true,
+                    "can_open_doors": false,
+                    "can_open_iron_doors": false,
+                    "can_pass_doors": true,
+                    "can_path_from_air": false,
+                    "can_path_over_lava": false,
+                    "can_path_over_water": false,
+                    "can_sink": true,
+                    "can_swim": false,
+                    "can_walk": true,
+                    "can_walk_in_lava": false,
+                    "is_amphibious": false
+                },
+                "minecraft:behavior.random_fly": {
+                    "priority": 2,
+                    "avoid_damage_blocks": true,
+                    "can_land_on_trees": true,
+                    "xz_dist": 10,
+                    "y_dist": 7,
+                    "y_offset": 0
+                }
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned":{
+                "add": {
+                    "component_groups": [
+                        "harpy_attack",
+                        "move"
+                    ]
+                }
+            }
+        }
+    }
+}

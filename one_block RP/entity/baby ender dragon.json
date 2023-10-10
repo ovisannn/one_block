@@ -2,15 +2,15 @@
     "format_version": "1.20.10",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "oneblock:penguin",
+            "identifier": "oneblock:baby_ender_dragon",
             "materials": {
-                "default": "entity"
+                "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/penguin"
+                "default": "textures/entity/baby_ender_dragon"
             },
             "geometry": {
-                "default": "geometry.penguin"
+                "default": "geometry.baby_ender_dragon"
             },
             "render_controllers": [
                 "controller.render.default"
@@ -20,9 +20,12 @@
                 "overlay_color": "#3b9dff"
             },
             "animations": {
-                "root": "controller.animation.penguin",
-                "walk": "animation.penguin.walk",
-                "idle": "animation.penguin.idle"
+                "root": "controller.animation.baby_ender_dragon",
+                "fly": "animation.baby_ender_dragon.fly",
+                "idle": "animation.baby_ender_dragon.idle",
+                "walk": "animation.baby_ender_dragon.walk",
+                "wake": "animation.baby_ender_dragon.wake",
+                "sit": "animation.baby_ender_dragon.sit"
             },
             "scripts": {
                 "animate": [

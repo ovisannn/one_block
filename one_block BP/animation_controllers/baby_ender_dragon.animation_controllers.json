@@ -1,0 +1,34 @@
+{
+    "format_version": "1.20.10",
+    "animation_controllers": {
+        "controller.animation.fly_baby_ender_dragon":{
+            "initial_state":"falling",
+            "states":{
+                "falling":{
+                    "on_entry":[
+                        "/effect @e[type=oneblock:baby_ender_dragon,r=2,c=1] slow_falling 20000 0 true"
+                    ],
+                    "transitions":[
+                        {
+                            "rising":"q.is_jumping"
+                        }
+                    ]
+                },
+                "rising":{
+                    "on_entry":[
+                        "/effect @e[type=oneblock:baby_ender_dragon,r=2,c=1] levitation 100000 6 true"
+                    ],
+                    "on_exit": [
+                        "/effect @e[type=oneblock:baby_ender_dragon,r=2,c=1] clear"
+                    ],
+                    "transitions":[
+                        {
+                            "falling":"!q.is_jumping"
+                        }
+                    ]
+                }
+            }
+        }
+        
+    }
+}

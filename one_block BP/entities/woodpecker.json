@@ -1,0 +1,160 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "oneblock:woodpecker",
+            "is_experimental": true,
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "track_attacker":{
+                "minecraft:behavior.hurt_by_target": {
+                    "priority": 0
+                }
+            },
+            "angry_woodpecker":{
+                "minecraft:angry": {
+                    "duration": 25,
+                    "calm_event":{
+                        "event" : "calmed_down",
+                        "target": "self"
+                    }
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 2,
+                    "attack_once": false,
+                    "speed_multiplier": 1.4
+                }
+            },
+            "take_nearest_target":{
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 0,
+                    "entity_types": [
+                        {
+                            "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                            },
+                            "max_dist": 100
+                        }
+                    ]
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 60,
+                    "time_down_event": {
+                        "event": "calmed_down",
+                        "target": "self"
+                    }
+                }
+            },
+            "easy_attack":{
+                "minecraft:attack": {
+                    "damage": 1.5
+                }
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:type_family": {
+                "family": [
+                    "animal"
+                ]
+            },
+            "minecraft:health": {
+                "value": 5,
+                "max": 5
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.4
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                "cause": "fall",
+                "deals_damage": false
+                }
+            },
+            "minecraft:jump.static": {
+            },
+            "minecraft:can_fly": {
+            },
+            "minecraft:navigation.fly": {
+                "can_path_over_water": true,
+                "can_path_from_air": true
+            },
+            "minecraft:movement.fly": {
+            },
+            "minecraft:behavior.random_stroll": {
+                "interval": 120,
+                "xz_dist": 10,
+                "y_dist": 7
+            },
+            "minecraft:physics": {
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+            },
+            "minecraft:game_event_movement_tracking": {
+                "emit_flap": true
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "alert_same_type": false,
+                "hurt_owner": true
+            },
+            "minecraft:on_target_acquired": {
+                "event": "attacked",
+                "target": "self"
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "track_attacker"
+                    ]
+                }
+            },
+            "attacked":{
+                "add": {
+                    "component_groups": [
+                        "angry_woodpecker",
+                        "easy_attack"
+                    ]
+                }
+            },
+            "calmed_down":{
+                "remove": {
+                    "component_groups": [
+                        "angry_woodpecker",
+                        "take_nearest_target"
+                    ]
+                }
+            }
+        }
+    }
+}
