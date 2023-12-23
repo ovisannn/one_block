@@ -4,19 +4,41 @@
         "controller.animation.mummy": {
             "states": {
                 "default": {
-                    "transitions": [
-                        {
-                            "state_1": "query.is_baby"
-                        }
-                    ]
-                },
-                "state_1": {
                     "animations": [
-                        "state_1"
+                        "idle"
                     ],
                     "transitions": [
                         {
-                            "default": "query.all_animations_finished"
+                            "walk": "query.modified_move_speed > 0.02"
+                        },
+                        {
+                            "attack": "q.is_delayed_attacking"
+                        }
+                    ]
+                },
+                "walk": {
+                    "animations": [
+                        "walk"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.modified_move_speed < 0.02 && q.is_delayed_attacking"
+                        },
+                        {
+                            "attack": "q.is_delayed_attacking"
+                        }
+                    ]
+                },
+                "attack":{
+                    "animations": [
+                        "attack"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.modified_move_speed < 0.02 && q.is_delayed_attacking"
+                        },
+                        {
+                            "walk": "query.modified_move_speed > 0.02"
                         }
                     ]
                 }

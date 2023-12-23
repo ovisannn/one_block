@@ -2,12 +2,10 @@
     "format_version": "1.10.0",
     "minecraft:item": {
         "description": {
-            "identifier": "oneblock:invis_spawn_pig"
+            "identifier": "oneblock:invis_spawn_skeleton"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "empty"
-            }
+            "minecraft:icon": "empty"
         }
     }
 }

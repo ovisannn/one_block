@@ -20,6 +20,7 @@ item.oneblock:invis_spawn_rabbit.name=invisspawnrabbit
 item.oneblock:invis_spawn_snowgolem.name=invisspawnsnowgolem
 item.oneblock:invis_spawn_stray.name=invisspawnstray
 item.oneblock:invis_spawn_wolf.name=invisspawnwolf
+item.oneblock:skyleton_helmet.name = skyleton helmet
 item.spawn_egg.entity.oneblock:penguin.name=Spawn penguin
 entity.oneblock:penguin.name=penguin
 item.spawn_egg.entity.oneblock:cloud_sheep.name=Spawn cloud sheep

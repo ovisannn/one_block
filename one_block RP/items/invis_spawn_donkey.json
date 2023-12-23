@@ -5,9 +5,7 @@
             "identifier": "oneblock:invis_spawn_donkey"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "empty"
-            }
+            "minecraft:icon": "empty"
         }
     }
 }

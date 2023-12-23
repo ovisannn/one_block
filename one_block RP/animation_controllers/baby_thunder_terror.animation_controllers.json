@@ -5,7 +5,7 @@
             "states": {
                 "default":{
                     "animations": [
-                        "idle"
+                        "idle", "sit"
                     ],
                     "transitions": [
                         {
